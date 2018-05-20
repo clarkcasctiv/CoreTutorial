@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Art Emporium</title>
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1> Art Emporium! </h1>
+    <div class="product-info">
+        <img src="/img/Demon Mask.jpg" />
+
+        <h3>Demon Mask</h3>
+        <ul class="product-prop">
+            <li>Price: Rs. 999</li>
+            <li>Artist: Sabin Maharjan</li>
+            <li>Description: Demon Mask</li>
+        </ul>
+        <button id="buyButton">Buy!</button>
+    </div>
+
+    <div id="form">
+
+        <form action="/" method="POST">
+            <div>
+                <label>Name</label><br />
+                <input type="text" value="" />
+            </div>
+
+            <div>
+                <label>Email</label><br />
+                <input type="email" value="" />
+            </div>
+            <div>
+                <label>Subject</label><br />
+                <input type="text" value="" />
+            </div>
+
+            <div>
+                <label>Message</label><br />
+                <textarea rows="4"></textarea>
+            </div>
+
+            <input type="submit" value="Send Message" />
+        </form>
+    </div>
+
+    <div>
+        <div id="loginToggle">Login</div>
+        <form class="popupForm">
+            <div>
+                <label>UserName</label>
+                <input type="text" value="" />
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" value="" />
+            </div>
+            <div>
+                <input type="checkbox" value="" />
+                <label>Remember Me</label><br />
+            </div>
+            <div>
+                <input type="submit" name="name" value="Login" />
+            </div>
+        </form>
+    </div>
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

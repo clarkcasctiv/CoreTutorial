@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Art Emporium: @ViewBag.Title </title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    @*<div class="navbar navbar-light">
+            <header class="container">
+                <div class="navbar-brand">Welcome To Art Emporium</div>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
+                <div id="menu" class="navbar navbar-collapse">
+                     <ul class="nav navbar-nav">
+                        <li><a asp-controller="App" asp-action="Index">Home</a></li>
+                        <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
+                        <li><a asp-controller="App" asp-action="About">About</a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>*@
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <header class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><i class="fa fa-check"></i> Art Emporium</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li style="margin-right:15px;"><a asp-controller="App" asp-action="Index">Home</a></li>
+                    <li style="margin-right:15px;"><a asp-controller="App" asp-action="Contact">Contact</a>
+                    <li style="margin-right:15px;"><a asp-controller="App" asp-action="About">About</a></li>
+                </ul>
+            </div>
+        </header>
+    </nav>
+
+    <section class="container">
+        <h2 class="text-center"> @ViewBag.Title</h2>
+        @RenderBody()
+    </section>
+    <footer class="container">
+        <div class="text-center">
+            Copyright 2017
+        </div>
+    </footer>
+
+    <script src="~/jquery/dist/jquery.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/main.js"></script>
+    @RenderSection("scripts", false)
+</body>
+</html>
